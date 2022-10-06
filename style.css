@@ -87,7 +87,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    height: 40vh;
+    height: 30vh;
     margin-top: 3rem;
 }
 
