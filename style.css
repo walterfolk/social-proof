@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/images/bg-pattern-top-desktop.svg),
+                      url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    
+    background-position: right 60vw bottom 45vh, left 25vw top 20vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 2rem;
+}
+
+.home h1 {
+   
+    color:  hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+
+.text {
+    margin-top: 1.5rem;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.4rem;
+    font-weight: 500;
+    font-size: 1rem;
+    
+    
+}
+
+
+.ratings{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: hsl(300, 43%, 22%);
+    font-size: .8rem;
+    gap: 1rem;
+    align-items: center;
+}
+.star {
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    padding: 1rem;
+    border-radius: .7rem;
+}
+
+.star h2 {
+    margin-left: 1rem;
+}
+
+.stars1{
+    justify-self: flex-start;
+}
+
+.stars2{
+    justify-self: center;
+}
+.stars3{
+    justify-self: flex-end;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    height: 50vh;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    padding: 2rem;
+    border-radius: .5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.profile {
+    display: flex;
+    text-align: left;
+}
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 1rem;
+}
+.profile h3 {
+    font-weight: 700;
+    line-height: 1.3rem;
+    align-self: center;
+}
+
+.profile h3 span {
+    display: block;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.card p {
+    line-height: 1.3rem;
+    margin-top: 1rem;
+}
+
+.card1 {
+    align-self: flex-start;
+}
+
+.card2 {
+    align-self:center;
+}
+.card3 {
+    align-self:flex-end;
+   
+}
+
+
+@media only screen and (max-width:375px) {
+    body {
+        text-align: center;
+        background-image: url(/images/bg-pattern-top-mobile.svg),
+        url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 40vw bottom 100vh, left 40vw top 70vh;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .description {
+        text-align: center;
+    }
+   .ratings{
+    font-size: .6rem;
+    align-items: center;
+    justify-content: center;
+   }  
+   .star{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+   }   
+
+   .star h2 {
+    margin-top: .5rem;
+   }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
