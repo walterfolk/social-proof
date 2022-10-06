@@ -14,7 +14,7 @@ body {
     background-image: url(/images/bg-pattern-top-desktop.svg),
                       url(/images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: right 60vw bottom 45vh, left 25vw top 20vh;
 }
 
